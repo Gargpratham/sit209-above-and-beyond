@@ -1,0 +1,125 @@
+header {
+    font-size: 30px;
+    background-color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(https://media.istockphoto.com/id/491466408/photo/driving-to-the-mountains.jpg?s=612x612&w=0&k=20&c=vNBruGd5k_6zuj4UsK40qvApqHyCeNfPzbpdI7V4mWk=);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    /* background-size: auto; */
+    font-size: 16px;
+    text-align: center;
+}
+
+.container{
+    color: #ffffff;
+    background-color: #253966;
+}
+.console {
+    position: relative;
+    position: center;
+    text-align: center;
+    border-radius: 20px;
+    margin-top: 10px;
+    width: 100%;
+    width: 1000px;
+    Height: auto;
+    background-color: rgba(255, 245, 245, 0.503);
+    color: darkblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.welcome {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+    font-weight: 900;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+
+.toggle {
+    position: relative;
+}
+
+.toggle input {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.toggle .onoff1 {
+    color: #662525;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.toggle .onoff {
+    color: #662525;
+    font-size: 30px;
+    text-align: center;
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.slider{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    background-color: #333;
+    transition: 0.4s;
+    width: 100px;
+    height: 50px;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    transition: 0.4s;
+}
+
+input:checked + .slider{
+    background-color: #fd5d00;
+    box-shadow: 0 0 12px #fd5d00;
+}
+
+input:checked + .slider:before{
+    transform: translateX(50px);
+}
+
+.slider.round{
+    border-radius: 20px;
+    display:inline-block;
+}
+
+.slider.round::before{
+    border-radius: 20px;
+    display: inline-block;
+}
